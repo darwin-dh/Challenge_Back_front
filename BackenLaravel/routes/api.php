@@ -18,3 +18,4 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
 Route::get('persona', [PersonaController::class, 'getPersona'])->name('getPersona');
+Route::get('persona/{id}', [PersonaController::class, 'getPersonabyid'])->name('getPersonabyid');
