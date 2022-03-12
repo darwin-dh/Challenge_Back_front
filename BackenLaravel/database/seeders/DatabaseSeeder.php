@@ -3,6 +3,7 @@
 namespace Database\Seeders;
 
 use App\Models\Persona;
+use App\Models\Producto;
 use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder
@@ -15,7 +16,16 @@ class DatabaseSeeder extends Seeder
     public function run()
     {
         //\App\Models\User::factory(10)->create();}
-        $this->call(PersonaSeeder::class);
+       // $this->call(PersonaSeeder::class);
+       /*
+       *@factory Persona
+       */         
+       Persona::factory(25)->create();
+        /*
+       *@factory Producto
+       */
+       Producto::factory(25)->create();
+        //$this->call(ProductoSeeder::class);
 
     }
 }

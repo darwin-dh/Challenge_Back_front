@@ -20,5 +20,6 @@ class ProductoSeeder extends Seeder
         $producto->Color = "black";
         $producto->Categoria = "electrodomestico";
         $producto->save();
+        
     }
 }
