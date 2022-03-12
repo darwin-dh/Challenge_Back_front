@@ -19,7 +19,7 @@ class PersonaController extends Controller
         return response()->json(Persona::all(), 200);
     }
     //getPersonabyid ontiene registros filtados por id
-    protected function getProductsbyid($id )    {
+    protected function getPersonabyid($id )    {
         $persona = Persona::find($id);
         if (is_null($persona)) {
             return response()->json(['mensaje' => 'registro no encontrado'], 404);
