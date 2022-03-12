@@ -1,10 +1,11 @@
 <template>
   <v-container>
-    <v-form>
+    <v-form v-model="valid">
       <v-container>
         <v-row>
           <v-col cols="12" md="2">
             <v-text-field
+              validate
               v-model="ciudadOrigen"
               label=" Ciudad de origen"
               required
@@ -78,7 +79,6 @@
         </v-row>
       </v-container>
     </v-form>
-    <h1>{{ objsVuelos }}</h1>
   </v-container>
 </template>
 
@@ -91,6 +91,9 @@ export default {
     retornoSelect: "",
     salidaSelect: "",
     fechaRetorno: "",
+    //validate
+    valid: false,
+    origen: [(v) => !!v || "Campor obligatorio"],
     //array
     vuelos: [],
     //botones false
@@ -100,22 +103,20 @@ export default {
   }),
   methods: {
     buscar() {
-      this.vuelos.push([
-        {
-          ciudadOrigen: this.ciudadOrigen,
-          ciudadDestino: this.ciudadDestino,
-          salidaSelect: this.salidaSelect,
-          retornoSelect: this.retornoSelect,
-        },
-      ]);
+      this.vuelos = {
+        ciudadOrigen: this.ciudadOrigen,
+        ciudadDestino: this.ciudadDestino,
+        salidaSelect: this.salidaSelect,
+        retornoSelect: this.retornoSelect,
+      };
 
       const vuelos = this.vuelos;
       const localstore = this.$store.dispatch("guardarVuelos", vuelos);
+      this.$router.push("/Resultado");
     },
 
     ...mapActions(["getVuelos"]),
   },
-  created() {},
   computed: {
     ...mapState(["objsVuelos"]),
   },

@@ -2,26 +2,25 @@
 ## Framework laravel
 ## migraciones personas , productos
 
-::: tip Personas migracion
-    create_personas_table
-:::
-::: tip Personas seeder
-    PersonaSeeder
-:::
-::: tip Personas modelo
-    PersonaS
-:::
-::: tip Personas controlador
-    PersonaController
-    funciones
-    getPersona : Obtiene todos los datos de la tabla persona
-    getPersonabyid: obtiene registro por "id"
-:::
-::: tip Personas api
-    rutas
-    http://127.0.0.1:8000/api/persona/
-    http://127.0.0.1:8000/api/persona/2
-:::
+     tip Personas migracion
+   > create_personas_table
+
+ tip Personas seeder
+   > PersonaSeeder
+
+ tip Personas modelo
+   > PersonaS
+
+ tip Personas controlador
+  >  PersonaController
+   > funciones
+   > getPersona : Obtiene todos los datos de la tabla persona
+   > getPersonabyid: obtiene registro por "id"
+
+ tip Personas api
+   > rutas
+   > http://127.0.0.1:8000/api/persona/2
+
 ### Resultado api ruta   http://127.0.0.1:8000/api/persona/
 ```json
 {

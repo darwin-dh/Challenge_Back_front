@@ -1,0 +1,42 @@
+[
+    {   "id":"1",
+        "precio":"2000",
+        "aerolínea":"Avianca",
+        "numeroescalas":"1",
+        "duraciónvuelo" :"8 horas"
+    },    {
+        "id":"2",
+        "precio":"100",
+        "aerolínea":"LATAM Ecuador",
+        "numeroescalas":"3",
+        "duraciónvuelo" :"17 horas"
+    },
+    {
+        "id":"3",
+        "precio":"500",
+        "aerolínea":"aeroregional",
+        "numeroescalas":"3",
+        "duraciónvuelo" :"09 horas"
+    },    {
+        "id":"4",
+        "precio":"600",
+        "aerolínea":"Aeroméxico",
+        "numeroescalas":"3",
+        "duraciónvuelo" :"37 horas"
+    },
+    {
+        "id":"5",
+        "precio":"880",
+        "aerolínea":"Petroecuador",
+        "numeroescalas":"2",
+        "duraciónvuelo" :"10 horas"
+    },
+    {
+        "id":"6",
+        "precio":"100",
+        "aerolínea":"tame",
+        "numeroescalas":"1",
+        "duraciónvuelo" :"8 horas"
+    }
+
+]
