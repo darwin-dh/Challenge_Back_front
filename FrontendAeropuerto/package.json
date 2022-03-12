@@ -1,0 +1,30 @@
+{
+  "name": "aerpuestos",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "build": "vite build",
+    "dev": "vite",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.4.4",
+    "@fortawesome/fontawesome-free": "5.15.3",
+    "roboto-fontface": "*",
+    "vue": "^2.6.14",
+    "vue-loader": "^17.0.0",
+    "vue-router": "^3.5.3",
+    "vuetify": "^2.6.4",
+    "vuex": "^3.6.2"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^2.2.0",
+    "@vue/cli-plugin-router": "~5.0.0",
+    "@vue/cli-plugin-vuex": "~5.0.0",
+    "@vue/cli-service": "~5.0.0",
+    "vite": "^2.8.0",
+    "vite-plugin-vue2": "^1.9.3",
+    "vue-cli-plugin-vuetify": "~2.4.7",
+    "vue-template-compiler": "^2.6.14"
+  }
+}
