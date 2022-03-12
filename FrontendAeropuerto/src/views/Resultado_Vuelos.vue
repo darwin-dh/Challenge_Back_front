@@ -1,5 +1,7 @@
 <template>
-  <h1>Homaaae</h1>
+  <v-container>
+    <h1>Vuelos</h1>
+  </v-container>
 </template>
 
 <script>
